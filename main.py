@@ -1,6 +1,5 @@
 from fastapi import FastAPI
+from routes import base
 app = FastAPI()
 
-@app.get("/WELCOME")
-def read_root():
-    return {"Hello": "World"}
+app.include_router(base.base_router)
