@@ -41,3 +41,4 @@ cp .env.example .env
 ```
 set up your env variable in .env like "OPEN_API_KEY"
 
+
