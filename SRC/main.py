@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 
+from SRC.routes import base ,data
 
-from SRC.routes import base
 app = FastAPI()
 
 app.include_router(base.base_router)
+app.include_router(data.data_router)
